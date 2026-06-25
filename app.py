@@ -84,10 +84,10 @@ def clustering():
     df['cluster'] = kmeans.fit_predict(X_scaled)
 
     cluster_labels = {
-        0: 'Protein Sedang',
-        1: 'Tinggi Energi Lengkap',
-        2: 'Tinggi Karbohidrat',
-        3: 'Seimbang'
+        0: 'Karbohidrat Dominan',
+        1: 'Energi Rendah',
+        2: 'Energi dan Lemak Tinggi',
+        3: 'Padar Nutrisi'
     }
 
     df['kategori'] = df['cluster'].map(cluster_labels)
