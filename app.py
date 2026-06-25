@@ -87,7 +87,7 @@ def clustering():
         0: 'Karbohidrat Dominan',
         1: 'Energi Rendah',
         2: 'Energi dan Lemak Tinggi',
-        3: 'Padar Nutrisi'
+        3: 'Padat Nutrisi'
     }
 
     df['kategori'] = df['cluster'].map(cluster_labels)
